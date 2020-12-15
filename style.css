@@ -1,0 +1,296 @@
+html
+body{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 300;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-main{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* index.html --> CSS --> START */
+.card-menu{
+    background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+    width: 350px;
+    height: 250px;
+}
+
+.btn-set-a-game{
+    width: -50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-game-rules{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn1 ,#btn2{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    background-color: turquoise;
+    border-radius: 15px;
+    border: 1px solid turquoise;
+    display: flex;
+    height: -50%;
+    padding: 5px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn1:hover ,#btn2:hover{
+    background-color: transparent;
+    color: black;
+    border-radius: 15px;
+    border: 2px solid turquoise;
+}
+
+.swal-text {
+    background-color: #e6e6ff;
+    padding: 17px;
+    font-family: 'Assistant',heebo,arial;
+    border: 1px solid #ccccff;
+    display: block;
+    margin: 22px;
+    text-align: left;
+    color: #61534e;
+}
+.swal-title {
+    padding: 17px;
+    font-family: 'Assistant',heebo,arial;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+}
+.swal-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #4962B3;
+    font-size: 14px;
+    color: white;
+    border: 1px solid #3e549a;
+    font-family: Assistant,heebo,arial;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+/* index.html --> CSS --> END */
+
+/* game.html --> CSS --> START */
+.card-options{
+    background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+    width: 350px;
+    height: 320px;
+}
+
+#header{
+    margin-top: 30px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    text-transform: none;
+}
+
+#categories, #amount, #level, #type{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid turquoise;
+    border-radius: 15px;
+    display: block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-group{ 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start-btn, #back-btn{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    background-color: white;
+    border-radius: 15px;
+    width: 150px;
+    margin: 0 10px;
+}
+
+#start-btn:hover,#back-btn:hover{
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+#game{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50;
+}
+
+.p1{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    margin: 20px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-answers{
+    position: relative;
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    height: 50px;
+    width: 350px;
+    border: 2px solid turquoise;
+    border-radius: 15px;
+    display: block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reset{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    left:10px;
+    text-align: center;
+}
+
+#reset:hover{
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+#question-number{
+    font-family: 'Assistant','sans-serif';
+    font-weight: 400;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    padding: 2px;
+    position: absolute;
+    left: 100px;
+    text-align: center;
+}
+
+#timer, #score, #reset, #question-number{
+    position: absolute;
+    top: 150px;
+}
+
+#timer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    padding: 2px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    right: 10px;
+}
+#score{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    right: 100px;
+    padding: 2px;
+    text-align: center;
+}
+/* game.html --> CSS --> END */
+
+.footer{
+    font-family: 'Assistant','sans-serif';
+    box-shadow: 0px 20px 45px black;
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}

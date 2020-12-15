@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--  Meta  -->
+        <meta charset="UTF-8" />
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">    
+        <title>Trivia Game</title>
+        
+        <!--  Styles  -->
+        <link rel="stylesheet" href="style.css"> <!--the reference to your Css should be inserted here -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/f24533ba21.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <!-- Jquery you should not edit -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+        <!-- JavaScript -->
+        <script type="text/javascript" src="Script.js"> </script> <!--the reference to your JavaScript code should be inserted here under src -->
+        <!-- Pop up -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+<body>
+    <video autoplay muted loop id="background">
+        <source src="background1.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+            <div class="row-main">
+                <div id="game">
+                    <a id="timer" value="Timer: ">Timer</a>
+                    <a id="score" value="Score: ">Score: 0</a>
+                    <input  onclick='Reset()' id="reset" type="buttoN" value="RESTART">
+                    <a id="question-number"></a>
+                </div>
+                <div class="card-options" id="option">
+                <p id="header"><b>Game Options:</b></p>
+                <input type="text"  id="amount" name="amount" placeholder="Input Amount Of Questions 1-20">
+                        
+                <select  id="categories" class="form-control-sl  custom-select">
+                    <option value="null">Select Category</option>
+                </select>
+
+                <select id="level"  class="form-control-sl  custom-select">
+                    <option  value="null"> Select difficulty</option>
+                    <option value="easy"> Easy</option>
+                    <option value="medium"> Medium</option>
+                    <option value="hard"> High</option>
+                </select>
+
+                <select id="type" class="form-control-sl  custom-select">
+                    <option value="null"> Select type</option>
+                    <option value="multiple"> 4 Answers</option>
+                    <option value="boolean"> True/False</option>
+                </select>
+            </div>
+        </div>
+     
+        <div class="btn-group">
+            <button type="button" class="btn btn-white" id="back-btn" onclick="location.href = 'index.html'">Back</button>
+            <button type="button" class="btn btn-white" id="start-btn" onclick="start()">Ready?</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>TriviaGame - All rights reserved
+            <br>Maor Elimelech:
+            <a href="">maor9505@gmail.com</a>
+            <br>Dorel Biton:
+            <a href="">dorelb513@gmail.com</a>
+        </p>
+    </footer>
+</body>
+</html>
